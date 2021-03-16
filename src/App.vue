@@ -1,18 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <first_form v-if="count === 1"></first_form>
+    <second_form v-if="count === 2"></second_form>
+    <third_form v-if="count === 3"></third_form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="submit" class="btn btn-primary" v-on:click = 'count > 2 ? count = 1: count += 1'>Press me</button>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import first_form from './components/first_form.vue'
+import second_form from './components/second_form.vue'
+import third_form from './components/third_form.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    first_form,
+    second_form,
+    third_form,
+  },
+  data() {
+    return {
+      count: 1
+    }
   }
+
 }
 </script>
 
@@ -25,4 +42,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
