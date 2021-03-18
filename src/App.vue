@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <circles v-bind:go_count="count"></circles>
     <first_form v-if="count === 1"></first_form>
     <second_form v-if="count === 2"></second_form>
     <third_form v-if="count === 3"></third_form>
@@ -15,11 +16,13 @@
 import first_form from './components/first_form.vue'
 import second_form from './components/second_form.vue'
 import third_form from './components/third_form.vue'
+import circles from './components/circles.vue'
 
 
 export default {
   name: 'App',
   components: {
+    circles,
     first_form,
     second_form,
     third_form,
