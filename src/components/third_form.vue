@@ -9,13 +9,13 @@
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="first_check" id="first_check" value="option1" checked>
+      <input class="form-check-input"  type="checkbox" name="first_check" id="first_check" value="option1" checked>
       <label class="form-check-label" for="first_check">
         I agree with your policy
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="second_check" id="second_check" value="option2">
+      <input class="form-check-input"  type="checkbox" name="second_check" id="second_check" value="option2">
       <label class="form-check-label" for="second_check">
         Send me email notifications
       </label>
